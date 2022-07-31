@@ -78,6 +78,9 @@ private:
             std::cerr << "Failed to open file to write\n";
             return;
         }
+        int a=99;
+        char* rep=(char*)&a;
+        socket_.send(asio::buffer(rep,sizeof(int)));
         receive_file_content();
     }
 
