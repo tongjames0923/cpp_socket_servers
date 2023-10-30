@@ -1,11 +1,11 @@
 #include <iostream>
 #include <cstdio>
-#include <boost/bind.hpp>
+#include <boost/bind/bind.hpp>
 #include <boost/shared_ptr.hpp>
 #include <boost/enable_shared_from_this.hpp>
 
 #include "FileInfo.h"
-
+using namespace boost::placeholders;
 class Session : public boost::enable_shared_from_this<Session>
 {
 public:
